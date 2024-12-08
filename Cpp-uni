@@ -1,0 +1,30 @@
+#include <iostream>
+#include <cmath>
+#include <string>
+
+class Calculator {
+public:
+    int floor(double number) {
+        return static_cast<int>(std::floor(number));
+    }
+
+    int add(int a, int b) {
+        return a + b;
+    }
+
+    double max1(double num1, double num2) {
+        return num1 > num2 ? num1 : num2;
+    }
+    bool find1(const std::string& str, char ch) {
+        return str.find(ch) != std::string::npos;
+    }
+    int max2(const int* arr, int size) {
+        int maxValue = arr[0];
+        for (int i = 1; i < size; i+) {
+            if (arr[i] > maxValue) {
+                maxValue = arr[i];
+            }
+        }
+
+
+};
